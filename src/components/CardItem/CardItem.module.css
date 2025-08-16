@@ -1,0 +1,42 @@
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 14rem;
+    
+}
+
+.imageContainer {
+    position: relative;
+    display: flex;
+    
+    justify-content: space-around
+}
+
+.imageContainer>img {
+    width: 14rem;
+    border-radius: 8px;
+    display: block;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(12, 20%, 44%);
+}
+
+.title {
+    color: hsl(14, 65%, 9%);
+    font-weight: 600;
+}
+
+.price {
+    color: hsl(14, 86%, 42%);
+    font-weight: 600;
+}

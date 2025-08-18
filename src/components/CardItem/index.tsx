@@ -23,7 +23,7 @@ export default function CardItem({ item }: CardItemProps) {
                 <div className={styles.itemInfo}>
                     <span className={styles.label}>{item.category}</span>
                     <span className={styles.title}>{item.name}</span>
-                    <span className={styles.price}>R${item.price}</span>
+                    <span className={styles.price}>R${item.price.toLocaleString('pt-BR')}</span>
                 </div>
             </div>
         </>

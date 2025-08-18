@@ -1,14 +1,7 @@
 .twoColumnLayout {
     display: grid;
-    margin: 4rem 4rem;
-    grid-template-columns: 1fr 1fr;
+    margin: 4vh 4vw;
+    grid-template-columns: 2fr 1fr;
     gap: 4vw
 }
 
-@media (max-width: 900px) {
-    .twoColumnLayout {
-        grid-template-columns: 1fr;
-        margin: 2rem 1rem;
-        gap: 2vw;
-    }
-}

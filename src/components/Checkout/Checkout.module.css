@@ -1,13 +1,14 @@
 .container {
-    width: 100%;
-    max-width: 400px;
+    display: block;
+    width: auto;
     background-color: hsl(20, 50%, 98%);
     border-radius: 16px;
     padding: 2vh 2vw;
+    height: fit-content;
     
-
 }
 
 h2 {
     color: hsl(14, 86%, 42%);
 }
+

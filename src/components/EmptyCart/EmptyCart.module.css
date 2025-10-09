@@ -1,0 +1,15 @@
+.content  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.emptyIcon {
+    max-height: 150px;
+}
+
+span {
+    color: hsl(12, 20%, 44%);
+    font-weight: 600;
+}

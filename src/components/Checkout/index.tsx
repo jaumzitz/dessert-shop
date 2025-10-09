@@ -1,3 +1,4 @@
+import EmptyCart from '../EmptyCart'
 import styles from './Checkout.module.css'
 
 export default function Checkout() {
@@ -5,6 +6,9 @@ export default function Checkout() {
         <>
             <aside className={styles.container}>
                 <h2>Meu carrinho (0)</h2>
+
+                <EmptyCart/>
+
             </aside>
         </>
     )

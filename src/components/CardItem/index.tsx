@@ -1,8 +1,8 @@
-import AddToCartBtn from '../buttons/AddToCartBtn'
+import AddToCartBtn from '../Buttons/AddToCartBtn'
 import styles from './CardItem.module.css'
 import { Dessert } from '../../types/Dessert'
 
-interface CardItemProps {
+type CardItemProps = {
     item: Dessert
 }
 
@@ -17,7 +17,7 @@ export default function CardItem({ item }: CardItemProps) {
                 <div className={styles.imageContainer}>
 
                     <img src={item.image}></img>
-                    <AddToCartBtn ></AddToCartBtn>
+                    <AddToCartBtn itemName={item.name}></AddToCartBtn>
                     
                 </div>
                 <div className={styles.itemInfo}>

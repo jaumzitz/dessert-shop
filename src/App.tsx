@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
 import Home from './pages/Home';
+import { CartProvider } from './contexts/CartContext';
 
 function App() {
 
   let name: string = "joao"
 
   return (
-    <Home></Home>
+
+    <CartProvider>
+      <Home></Home>
+    </CartProvider>
   );
 }
 

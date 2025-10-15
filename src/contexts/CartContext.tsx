@@ -3,7 +3,7 @@ import { Dessert } from "../types/Dessert";
 
 export type CartItem = {
 
-    dessert: Dessert | null
+    product: Dessert | null
     amount: number
 
 }
@@ -13,15 +13,13 @@ export type Cart = {
     total: number
 }
 
-
-
 type CartContextType = {
     value: Cart,
     setValue: (newValue: Cart) => void
 }
 
 const emptyCart: Cart = {
-    items: [{ dessert: null, amount: 0 }],
+    items: [],
     total: 0
 }
 

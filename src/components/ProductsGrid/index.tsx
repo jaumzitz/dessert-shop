@@ -2,8 +2,16 @@ import CardItem from "../../components/CardItem";
 import data from '../../db/data.json';
 import styles from './ProductsGrid.module.css'
 import { Dessert } from "../../types/Dessert";
+import { Cart, CartContext } from "../../contexts/CartContext";
+import { useContext } from "react";
 
 export default function ProductsGrid() {
+
+    const cart: Cart =  useContext(CartContext).value
+
+    
+
+
     return (
         <>
             <div style={{display: 'flex', flexDirection: 'column'}}>
@@ -19,7 +27,7 @@ export default function ProductsGrid() {
                             price: item.price
                         }
 
-                        return <CardItem item={dessert}></CardItem>
+                        return <CardItem key={dessert.name} item={dessert}></CardItem>
                     })}
                 </section>
             </div>

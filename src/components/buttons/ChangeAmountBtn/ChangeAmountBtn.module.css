@@ -1,21 +1,15 @@
-.buttonContainer {
+.amountButtonContainer {
     position: absolute;
     bottom: -10px;
     display: flex;
     align-items: center;
     z-index: 2;
-    background-color: hsl(20, 50%, 98%);
-    border-radius: 60px;
-    
-
-}
-
-button {
     display: flex;
     align-items: center;
     gap: 8px;
     border: 1px solid hsl(14, 86%, 42%);
-    padding: 8px 16px;
+    background-color: hsl(14, 86%, 42%);
+    padding: 0px 8px;
     border-radius: 60px;
     font-family: 'Red Hat Text';
     font-weight: 600;
@@ -24,5 +18,21 @@ button {
     &:hover {
         cursor: pointer;
     }
+
+
+
+
+}
+
+button {
+    background-color: transparent;
     
+}
+
+.amountButtonContainer > img {
+    border: 1px solid;
+    padding: 8px;
+    width: 10px;
+    height: 10px;
+
 }
